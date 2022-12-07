@@ -222,12 +222,12 @@ function CardCalculator({ element }) {
       {add && (
         <CardFooter>
           <Row>
-            <Col>
+            <Col xs={12} sm={4} className="col-auto">
               <FormGroup>
                 <Input innerRef={refs.title} type="text" placeholder="Titre" />
               </FormGroup>
             </Col>
-            <Col>
+            <Col xs={12} sm={4} className="col-auto">
               <FormGroup>
                 <Input
                   innerRef={refs.expected}
@@ -236,7 +236,7 @@ function CardCalculator({ element }) {
                 />
               </FormGroup>
             </Col>
-            <Col>
+            <Col xs={12} sm={4} className="col-auto">
               <FormGroup>
                 <Input innerRef={refs.real} type="number" placeholder="Réel" />
               </FormGroup>

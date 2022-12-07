@@ -167,7 +167,7 @@ const Tables = () => {
 
   return (
     <>
-      <Container fluid className="pt-5">
+      <Container fluid className="pt-0 pt-sm-5">
         <div ref={templateRef}>
           <style>{pageStyle}</style>
           <Row>
@@ -176,7 +176,7 @@ const Tables = () => {
             </Col>
           </Row>
 
-          <Row className="mb-4">
+          <Row className="mb-0 mb-lg-4">
             <Col lg="6" xl="3">
               <StatsCard
                 label="Revenus"
@@ -216,7 +216,7 @@ const Tables = () => {
           </Row>
           <Row className="mb-4">
             <Col
-              xs={12}
+              xs={6}
               className="col-md-auto my-2 d-flex justify-content-center"
             >
               <Button
@@ -231,7 +231,22 @@ const Tables = () => {
               </Button>
             </Col>
             <Col
-              xs={12}
+              xs={6}
+              className="col-md-auto my-2 d-flex justify-content-center"
+            >
+              <Button
+                className="w-100"
+                outline
+                size="sm"
+                color="dark"
+                onClick={toggle("settings")}
+              >
+                <i className="fa fa-cog mr-1" />
+                Préférences
+              </Button>
+            </Col>
+            <Col
+              xs={6}
               className="col-md-auto my-2 d-flex justify-content-center"
             >
               <Button
@@ -246,7 +261,7 @@ const Tables = () => {
               </Button>
             </Col>
             <Col
-              xs={12}
+              xs={6}
               className="col-md-auto my-2 d-flex justify-content-center"
             >
               <Button
@@ -258,21 +273,6 @@ const Tables = () => {
               >
                 <i className="fa fa-file-pdf mr-1" />
                 Exporter PDF
-              </Button>
-            </Col>
-            <Col
-              xs={12}
-              className="col-md-auto my-2 d-flex justify-content-center"
-            >
-              <Button
-                className="w-100"
-                outline
-                size="sm"
-                color="dark"
-                onClick={toggle("settings")}
-              >
-                <i className="fa fa-cog mr-1" />
-                Préférences
               </Button>
             </Col>
           </Row>
