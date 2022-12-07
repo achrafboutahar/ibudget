@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ibudget/static/css/main.f65bc839.css",
-    "main.js": "/ibudget/static/js/main.b24e971e.js",
+    "main.js": "/ibudget/static/js/main.d2da0136.js",
     "static/media/fa-solid-900.svg": "/ibudget/static/media/fa-solid-900.13de59f1a36b6cb4bca0.svg",
     "static/media/profile-cover.jpg": "/ibudget/static/media/profile-cover.978992455652990b161d.jpg",
     "static/media/fa-brands-400.svg": "/ibudget/static/media/fa-brands-400.216edb96b562c79adc09.svg",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.f65bc839.css",
-    "static/js/main.b24e971e.js"
+    "static/js/main.d2da0136.js"
   ]
 }
