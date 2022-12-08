@@ -110,6 +110,12 @@ function CardCalculator({ element }) {
 
   const { icon, color } = status;
 
+  const handleKeyUp = (e) => {
+    const { value } = e.target;
+    const expected = parseInt(value);
+    if (expected) refs.real.current.value = expected;
+  };
+
   return (
     <Card className="border">
       <CardHeader className="border-0">
@@ -230,6 +236,8 @@ function CardCalculator({ element }) {
             <Col xs={12} sm={4} className="col-auto">
               <FormGroup>
                 <Input
+                  defaultValue={refs.expected.current || 0}
+                  onKeyUp={handleKeyUp}
                   innerRef={refs.expected}
                   type="number"
                   placeholder="Prévu"
@@ -238,7 +246,12 @@ function CardCalculator({ element }) {
             </Col>
             <Col xs={12} sm={4} className="col-auto">
               <FormGroup>
-                <Input innerRef={refs.real} type="number" placeholder="Réel" />
+                <Input
+                  innerRef={refs.real}
+                  defaultValue={refs.real.current || 0}
+                  type="number"
+                  placeholder="Réel"
+                />
               </FormGroup>
             </Col>
           </Row>

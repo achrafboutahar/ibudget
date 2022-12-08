@@ -167,54 +167,16 @@ const Tables = () => {
 
   return (
     <>
-      <Container fluid className="pt-0 pt-sm-5">
+      <Container fluid className="pt-0 pt-sm-3 pt-md-7">
         <div ref={templateRef}>
           <style>{pageStyle}</style>
-          <Row>
+          {/* <Row>
             <Col>
               <h1 className="my-5 text-center">{root.label}</h1>
             </Col>
-          </Row>
+          </Row> */}
 
-          <Row className="mb-0 mb-lg-4">
-            <Col lg="6" xl="3">
-              <StatsCard
-                label="Revenus"
-                value={0}
-                icon="arrow-right"
-                color="success"
-                description="Revenus totals du mois"
-              />
-            </Col>
-            <Col lg="6" xl="3">
-              <StatsCard
-                label="Différence"
-                value={total.income - total.expense}
-                icon="expand-alt"
-                color="yellow"
-                description="Différence entre Revenus et Dépenses"
-              />
-            </Col>
-            <Col lg="6" xl="3">
-              <StatsCard
-                label="Epargne"
-                value={0}
-                icon="arrow-down"
-                color="info"
-                description="Epargne total du mois"
-              />
-            </Col>
-            <Col lg="6" xl="3">
-              <StatsCard
-                label="Dépenses"
-                value={0}
-                icon="arrow-left"
-                color="warning"
-                description="Dépenses totales du mois"
-              />
-            </Col>
-          </Row>
-          <Row className="mb-4">
+          <Row className="my-4 mt-sm-0 justify-content-end">
             <Col
               xs={6}
               className="col-md-auto my-2 d-flex justify-content-center"
@@ -274,6 +236,45 @@ const Tables = () => {
                 <i className="fa fa-file-pdf mr-1" />
                 Exporter PDF
               </Button>
+            </Col>
+          </Row>
+
+          <Row className="mb-0 mb-lg-4">
+            <Col lg="6" xl="3">
+              <StatsCard
+                label="Revenus"
+                value={0}
+                icon="arrow-right"
+                color="success"
+                description="Revenus totals du mois"
+              />
+            </Col>
+            <Col lg="6" xl="3">
+              <StatsCard
+                label="Différence"
+                value={total.income - total.expense}
+                icon="expand-alt"
+                color="yellow"
+                description="Différence entre Revenus et Dépenses"
+              />
+            </Col>
+            <Col lg="6" xl="3">
+              <StatsCard
+                label="Epargne"
+                value={0}
+                icon="arrow-down"
+                color="info"
+                description="Epargne total du mois"
+              />
+            </Col>
+            <Col lg="6" xl="3">
+              <StatsCard
+                label="Dépenses"
+                value={0}
+                icon="arrow-left"
+                color="warning"
+                description="Dépenses totales du mois"
+              />
             </Col>
           </Row>
 
